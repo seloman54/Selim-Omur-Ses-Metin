@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selim Ömür Ses-Metin</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Selim Ömür Ses-Metin</h1>
+        <p>Hızlı ve kolay konuşma tanıma aracı.</p>
+
+        <div class="ayarlar">
+            <label for="languageSelect">Dil Seçin:</label>
+            <select id="languageSelect">
+                <option value="tr-TR">Türkçe</option>
+                <option value="en-US">İngilizce (ABD)</option>
+            </select>
+        </div>
+
+        <button id="talkButton">BAS KONUŞ</button>
+        <div id="status">Durum: Beklemede</div>
+
+        <textarea id="output" rows="12" placeholder="Konuşmanız buraya yazılacak..."></textarea>
+        
+        <div class="talimatlar">
+            <h3>Kullanma Talimatı</h3>
+            <ol>
+                <li>Mikrofonunuzun bilgisayarınıza bağlı ve çalışır durumda olduğundan emin olun.</li>
+                <li>Yukarıdan "Türkçe" veya "İngilizce" dil seçimini yapın.</li>
+                <li>**"BAS KONUŞ"** düğmesine farenizle **basılı tutarak** konuşmaya başlayın.</li>
+                <li>Konuşmanız bittiğinde veya durakladığınızda düğmeyi **bırakın**.</li>
+                <li>Konuşmanız işlenecek ve aşağıdaki metin kutusuna eklenecektir.</li>
+                <li>Tarayıcı mikrofon izni isterse "İzin Ver" demeniz gerekmektedir.</li>
+            </ol>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
