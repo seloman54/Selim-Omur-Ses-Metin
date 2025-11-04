@@ -28,8 +28,25 @@ if (!window.SpeechRecognition) {
     // --- "BAS KONUŞ" Düğmesi Olayları ---
 
     // Düğmeye fare ile BASILDIĞINDA:
+  // Düğmeye fare ile BASILDIĞINDA:
     talkButton.onmousedown = () => {
         if (!isListening) {
+            
+            // --- HATA DÜZELTMESİ BURADA ---
+            // Kayda başlamadan hemen önce, metin kutusundaki (output.value) mevcut metni al.
+            let currentText = output.value;
+            
+            // Eğer kutu boş değilse ve sonunda boşluk yoksa, yeni kelimenin
+            // yapışmaması için bir boşluk ekle.
+            if (currentText.length > 0 && currentText.slice(-1) !== ' ') {
+                currentText += ' ';
+            }
+            
+            // Değişkenimizi (hafızayı) bu güncel metne eşitle.
+            // Eğer kullanıcı metni sildiyse, currentText zaten boş olacağı için hafıza da sıfırlanır.
+            final_transcript = currentText; 
+            // --- DÜZELTME SONU ---
+            
             recognition.start(); // Dinlemeyi başlat
         }
     };
