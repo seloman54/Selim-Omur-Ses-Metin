@@ -1,0 +1,99 @@
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background-color: #f0f2f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.container {
+    background-color: #ffffff;
+    padding: 2rem 3rem;
+    border-radius: 12px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.07);
+    width: 100%;
+    max-width: 700px;
+    text-align: center;
+}
+
+h1 {
+    color: #1c1e21;
+    margin-top: 0;
+}
+
+.ayarlar {
+    margin: 1.5rem 0;
+    font-size: 1.1rem;
+}
+
+select {
+    font-size: 1rem;
+    padding: 0.5rem;
+    margin-left: 10px;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+}
+
+#talkButton {
+    font-size: 1.25rem;
+    font-weight: bold;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    background-color: #28a745; /* Yeşil */
+    color: white;
+    transition: background-color 0.2s ease, transform 0.1s ease;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+/* Bu, "BAS KONUŞ" düğmesine basıldığında olacaklar */
+#talkButton.recording,
+#talkButton:active {
+    background-color: #dc3545; /* Kırmızı */
+    transform: scale(0.98); /* Hafifçe küçülme efekti */
+}
+
+#status {
+    font-size: 1rem;
+    color: #555;
+    min-height: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+textarea {
+    width: 100%;
+    box-sizing: border-box; 
+    font-size: 1.1rem;
+    line-height: 1.6;
+    padding: 0.75rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    resize: vertical;
+}
+
+.talimatlar {
+    text-align: left;
+    margin-top: 2rem;
+    color: #333;
+    border-top: 1px solid #eee;
+    padding-top: 1.5rem;
+}
+
+.talimatlar h3 {
+    text-align: center;
+    color: #1c1e21;
+}
+
+.talimatlar ol {
+    padding-left: 30px;
+}
+
+.talimatlar li {
+    margin-bottom: 0.75rem;
+    line-height: 1.5;
+}
